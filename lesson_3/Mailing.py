@@ -7,5 +7,3 @@ class Mailing:
         self.cost = cost
         self.track = track
 
-#def __str__(self): return (f' отправление {self.to_ad} из {self.from_ad}'
-    #                       f' в {self.cost}. стоимость {self.track} рублей.')
