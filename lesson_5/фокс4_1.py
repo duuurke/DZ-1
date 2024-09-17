@@ -9,6 +9,7 @@ driver.get("http://the-internet.herokuapp.com/entry_ad")
 
 btn = ("div.modal-footer > p")
 close_modal = driver.find_element(By.CSS_SELECTOR, btn)
+sleep(3)
 
 close_modal.click()
 sleep(2)
