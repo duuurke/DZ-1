@@ -8,7 +8,8 @@ driver = webdriver.Firefox()
 driver.get("http://the-internet.herokuapp.com/entry_ad")
 
 btn = ("div.modal-footer > p")
-close_modal = driver.find_element(By.CSS_SELECTOR, btn)
+Cmodal = driver.find_element(By.CSS_SELECTOR, btn)
+sleep(3)
 
-close_modal.click()
+Cmodal.click()
 sleep(2)

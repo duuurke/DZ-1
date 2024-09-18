@@ -1,23 +1,19 @@
-
-
-#не понимаю в чем ошибка (((
-
 from time import sleep 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.alert import Alert
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome(
-service=ChromeService(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 driver.get("http://uitestingplayground.com/classattr/")
 
-for _ in range (3):
-    button = driver.find_element(By.CSS_SELECTOR, '.btn.btn-primary')
+button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.btn.btn-primary')))
 
-    driver.switch_to.alert.accept()
+# Кликаем на кнопку
+button.click()
 
-
+# Закрываем драйвер
 driver.quit()
