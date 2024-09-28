@@ -13,7 +13,7 @@ dod = WebDriverWait(driver, 40)
 dod.until(EC.presence_of_all_elements_located ((By.CSS_SELECTOR, '#award')))
 
 
-src = driver.find_element(By.CSS_SELECTOR, 'img').get_attribute('src')
+src = driver.find_element(By.CSS_SELECTOR, 'img#award').get_attribute('src')
 
 print(src)
 driver.quit() 
