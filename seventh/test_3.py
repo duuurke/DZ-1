@@ -1,4 +1,4 @@
-from lesson_7.shop_test3.basket import basket
+from seventh.shop_test3.basket import basket
 from selenium import webdriver
 
 def test3():

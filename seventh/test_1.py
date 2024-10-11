@@ -1,5 +1,5 @@
-from lesson_7.forma_test1.mpg.fields import fields
-from lesson_7.forma_test1.mpg.m_pg import m_pg
+from seventh.forma_test1.mpg.fields import fields
+from seventh.forma_test1.mpg.m_pg import m_pg
 from selenium import webdriver
 
 def test1():

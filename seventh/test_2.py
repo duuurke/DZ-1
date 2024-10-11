@@ -1,4 +1,4 @@
-from lesson_7.calculator_test2.TY import TY
+from seventh.calculator_test2.TY import TY
 from selenium import webdriver
 
 def test2():
