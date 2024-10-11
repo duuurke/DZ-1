@@ -18,7 +18,7 @@ def test_3():
     driver.find_element(By.ID, 'shopping_cart_container').click()
     driver.find_element(By.ID, 'checkout').click()
     driver.find_element(By.ID, 'first-name').send_keys('инокентий')
-    driver.find_element(By.ID, 'last-name').send_keys('трактарин')
+    driver.find_element(By.ID, 'last-name').send_keys('трактарист')
     driver.find_element(By.ID, 'postal-code').send_keys('1489456')
     driver.find_element(By.ID, 'continue').click()
 
