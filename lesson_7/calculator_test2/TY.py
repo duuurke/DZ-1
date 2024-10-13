@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from seventh.url_123 import calculator_url
+from lesson_7.url_123 import calculator_url
 
 
 class TY():

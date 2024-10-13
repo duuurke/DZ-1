@@ -1,10 +1,10 @@
-from seventh.calculator_test2.TY import TY
+from lesson_7.calculator_test2.TY import TY
 from selenium import webdriver
 
 def test2():
     driver = webdriver.Firefox()
     calc = TY(driver)
-    calc.calculator(1)
+    calc.calculator(45)
     calc.fill('7')
     calc.fill('+')
     calc.fill('8')
